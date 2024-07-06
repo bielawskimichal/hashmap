@@ -69,7 +69,10 @@ hashset_test.set('kite')
 hashset_test.set('kite')
 hashset_test.set('lion')
 
-# hashset_test.remove_at('apple')
+hashset_test.remove_at('apple')
+p hashset_test.has?('apple')
+hashset_test.set('apple')
+p hashset_test.has?('apple')
 
 p "keys: #{hashset_test.keys}"
 p "entries: #{hashset_test.entries}"
