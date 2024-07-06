@@ -41,7 +41,7 @@ class LinkedList
     @head.next_node
   end
 
-  def append(key, value)
+  def append(key, value = nil)
     tmp = size.zero? ? @head : last_node
     node = Node.new(key, value, @tail)
     tmp.next_node = node
